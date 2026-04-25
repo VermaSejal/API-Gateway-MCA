@@ -26,4 +26,8 @@ app.post('/login', (req, res) => {
     res.status(401).json({ message: "Invalid credentials" });
 });
 
-app.listen(3003, () => console.log("Auth Service running on port 3003"));
+const PORT = process.env.PORT || 3003;
+
+app.listen(PORT, () => {
+  console.log(`Auth running on ${PORT}`);
+});
