@@ -1,0 +1,17 @@
+{
+  "name": "api-gateway-project",
+  "version": "1.0.0",
+  "description": "Microservices API Gateway Project",
+  "main": "auth-service.js",
+  "scripts": {
+    "start": "node auth-service.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.18.2",
+    "helmet": "^7.0.0",
+    "jsonwebtoken": "^9.0.2",
+    "morgan": "^1.10.0"
+  }
+}
