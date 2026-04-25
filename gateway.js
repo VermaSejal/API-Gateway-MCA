@@ -20,9 +20,9 @@ const limiter = rateLimit({
 app.use(limiter);
 
 // 🔗 Replace these with your actual Render URLs
-const AUTH_SERVICE = "https://auth-service-pij9.onrender.com/";
-const USER_SERVICE = "https://user-service-9r4l.onrender.com/";
-const ORDER_SERVICE = "https://order-service-ikqm.onrender.com/";
+const AUTH_SERVICE = "https://auth-service-pij9.onrender.com";
+const USER_SERVICE = "https://user-service-9r4l.onrender.com";
+const ORDER_SERVICE = "https://order-service-ikqm.onrender.com";
 
 // Root
 app.get("/", (req, res) => {
