@@ -36,4 +36,8 @@ app.get('/orders', authenticate, (req, res) => {
     ]);
 });
 
-app.listen(3002, () => console.log("Order Service running on port 3002"));
+const PORT = process.env.PORT || 3002;
+
+app.listen(PORT, () => {
+  console.log(`Auth running on ${PORT}`);
+});
