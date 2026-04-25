@@ -1,3 +1,7 @@
+app.get("/", (req, res) => {
+  res.send("Auth Service is running 🚀");
+});
+
 require('dotenv').config({ path: 'config.env' });
 const express = require('express');
 const jwt = require('jsonwebtoken');
